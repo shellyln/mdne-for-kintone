@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "name": "mdne-for-kintone",
+  "version": "0.1.0",
+  "description": "mdne for kintone - Edit kintone fields with powerful markdown and code editor.",
+  "keywords": [
+    "kintone",
+    "Markdown",
+    "mdne",
+    "Ménneu",
+    "markdown-it",
+    "Liyad",
+    "Lisp",
+    "LSX"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shellyln/mdne-for-kintone.git"
+  },
+  "author": "shellyln",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shellyln/mdne-for-kintone/issues"
+  },
+  "homepage": "https://shellyln.github.io/"
+}
