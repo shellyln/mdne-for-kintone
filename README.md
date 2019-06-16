@@ -99,7 +99,7 @@ https://kintone-sol.cybozu.co.jp/apps/005-gijiroku.html (📋 議事録管理 Ap
 * https://unpkg.com/react@16/umd/react.production.min.js
 * https://unpkg.com/react-dom@16/umd/react-dom.production.min.js
 * https://unpkg.com/mdne@0.1.33/contents/assets/vendor/menneu-0.1.0/menneu.min.js
-* [user-app-config.js](https://github.com/shellyln/mdne-for-kintone/blob/master/src/meeting-minutes-app/)
+* [user-app-config.js](https://github.com/shellyln/mdne-for-kintone/blob/master/src/meeting-minutes-app/user-app-config.js)
   * **Please do not register the above URL directly. It is not a CDN URL.**
   * Please edit this file to show the button of the defined report.
     * XLcCNs2aUCv93L7W__EDITOR_APP_ID
