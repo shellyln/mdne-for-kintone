@@ -1,3 +1,8 @@
+// Copyright (c) 2019 Shellyl_N and Authors
+// license: MIT
+// https://github.com/shellyln
+
+
 kintone.events.on('app.record.index.show', function(event) {
     const baseUrl = 'https://unpkg.com/mdne@0.1.33/contents';
 

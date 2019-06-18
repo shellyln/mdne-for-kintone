@@ -1,3 +1,8 @@
+// Copyright (c) 2019 Shellyl_N and Authors
+// license: MIT
+// https://github.com/shellyln
+
+
 {
     let isKintoneRecord = false;
     let kintoneRecordPath = null;

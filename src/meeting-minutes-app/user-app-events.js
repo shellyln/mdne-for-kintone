@@ -1,3 +1,8 @@
+// Copyright (c) 2019 Shellyl_N and Authors
+// license: MIT
+// https://github.com/shellyln
+
+
 {
     const ELEMENT_ID_PREFIX = 'xJM4tGGWhlG2hNhd__';
     const EDITOR_APP_ID     = XLcCNs2aUCv93L7W__EDITOR_APP_ID;
