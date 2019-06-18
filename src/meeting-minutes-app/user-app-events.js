@@ -66,7 +66,8 @@
 
             (async () => {
                 const buf = await start(event.record[fieldSet.textFieldCode].value, event.record, {
-                    inputFormat: 'md',
+                    rawInput: true,
+                    inputFormat: 'md', // TODO: 'md' option outputs 'html' and 'head' tags. new format option is needed!
                     dataFormat: 'object',
                     outputFormat: 'html',
                 });

@@ -17,6 +17,15 @@ kintone.events.on('app.record.index.show', function(event) {
 `;
 
     const divEl = document.querySelector('#CTqcZ5ZV4TyalE0N');
+    if (!divEl) {
+        return;
+    }
+
+    // remove all original page styles.
+    Array.from(document.querySelectorAll('head > link[rel=stylesheet]')).forEach(x => x.remove());
+    Array.from(document.querySelectorAll('body link[rel=stylesheet]')).forEach(x => x.remove());
+
+    // TODO: use shadow root.
     // const root = divEl.attachShadow({mode: 'open'});
     // root.innerHTML = html;
     divEl.innerHTML = html;
