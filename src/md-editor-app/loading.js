@@ -12,8 +12,6 @@ kintone.events.on('app.record.index.show', function(event) {
 <link rel="stylesheet" href="${baseUrl}/assets/vendor/materialize-1.0.0/icon.css">
 <link rel="stylesheet" href="${baseUrl}/assets/vendor/dialog-polyfill/dialog-polyfill.css">
 <link rel="stylesheet" href="${baseUrl}/assets/style/index.css">
-
-<main id="app" class="grey darken-1"></main>
 `;
 
     const divEl = document.querySelector('#CTqcZ5ZV4TyalE0N');
@@ -21,10 +19,22 @@ kintone.events.on('app.record.index.show', function(event) {
         return;
     }
 
-    // remove all original page styles.
+    const headEl = document.querySelector('head');
+    const metaViewport = document.createElement('meta');
+    metaViewport.name = 'viewport';
+    metaViewport.content = 'width=device-width,initial-scale=1';
+    headEl.appendChild(metaViewport);
+    const metaThemeColor = document.createElement('meta');
+    metaThemeColor.name = 'theme-color';
+    metaThemeColor.content = '#424242';
+    headEl.appendChild(metaThemeColor);
+
     const bodyEl = document.querySelector('body');
-    bodyEl.style.width = '100%';
-    bodyEl.style.height = '100%';
+    // bodyEl.style.width = '100%';
+    // bodyEl.style.height = '100%';
+    bodyEl.style.overflowX = 'hidden';
+    bodyEl.style.overflowY = 'auto';
+    // remove all original page styles.
     Array.from(document.querySelectorAll('head > link[rel=stylesheet]')).forEach(x => x.remove());
     Array.from(document.querySelectorAll('body link[rel=stylesheet]')).forEach(x => x.remove());
     // hide the original elements and move the target element to immediate child of body element.
@@ -36,6 +46,12 @@ kintone.events.on('app.record.index.show', function(event) {
     // const root = divEl.attachShadow({mode: 'open'});
     // root.innerHTML = html;
     divEl.innerHTML = html;
+    divEl.style.display = 'none';
+
+    const mainEl = document.createElement('main');
+    mainEl.id = 'app';
+    mainEl.className = 'grey darken-1';
+    bodyEl.appendChild(mainEl);
 
 
     let scripts = [
