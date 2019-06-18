@@ -22,8 +22,15 @@ kintone.events.on('app.record.index.show', function(event) {
     }
 
     // remove all original page styles.
-    // Array.from(document.querySelectorAll('head > link[rel=stylesheet]')).forEach(x => x.remove());
-    // Array.from(document.querySelectorAll('body link[rel=stylesheet]')).forEach(x => x.remove());
+    const bodyEl = document.querySelector('body');
+    bodyEl.style.width = '100%';
+    bodyEl.style.height = '100%';
+    Array.from(document.querySelectorAll('head > link[rel=stylesheet]')).forEach(x => x.remove());
+    Array.from(document.querySelectorAll('body link[rel=stylesheet]')).forEach(x => x.remove());
+    // hide the original elements and move the target element to immediate child of body element.
+    // DO NOT REMOVE the original elements TO KEEP RUNNING original scripts.
+    Array.from(document.querySelectorAll('body > div')).forEach(x => x.style.display = 'none');
+    bodyEl.appendChild(divEl);
 
     // TODO: use shadow root.
     // const root = divEl.attachShadow({mode: 'open'});
