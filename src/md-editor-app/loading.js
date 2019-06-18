@@ -22,8 +22,8 @@ kintone.events.on('app.record.index.show', function(event) {
     }
 
     // remove all original page styles.
-    Array.from(document.querySelectorAll('head > link[rel=stylesheet]')).forEach(x => x.remove());
-    Array.from(document.querySelectorAll('body link[rel=stylesheet]')).forEach(x => x.remove());
+    // Array.from(document.querySelectorAll('head > link[rel=stylesheet]')).forEach(x => x.remove());
+    // Array.from(document.querySelectorAll('body link[rel=stylesheet]')).forEach(x => x.remove());
 
     // TODO: use shadow root.
     // const root = divEl.attachShadow({mode: 'open'});
