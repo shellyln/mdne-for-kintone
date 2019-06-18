@@ -1,4 +1,5 @@
 
+/// Please change following constant values ///
 const XLcCNs2aUCv93L7W__EDITOR_APP_ID  = '18';
 const XLcCNs2aUCv93L7W__EDITOR_VIEW_ID = '5118342';
 
@@ -18,3 +19,4 @@ const XLcCNs2aUCv93L7W__TARGET_FIELD_SETS = [{
     buttonFieldCode: 'issues_buttons',
     ext: 'md',
 }];
+///////////////////////////////////////////////
