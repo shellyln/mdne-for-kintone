@@ -45,7 +45,7 @@
                 editButtonEl.onclick = () => {
                     window.open(`/k/${
                         EDITOR_APP_ID}/?view=${
-                        EDITOR_VIEW_ID}#open.kintone=1&app=19&record=${
+                        EDITOR_VIEW_ID}#open.kintone=1&app=${kintone.app.getId()}&record=${
                         event.recordId}&field=${
                         encodeURIComponent(fieldSet.textFieldCode)}&ext=${
                         fieldSet.ext}`, '_blank');
